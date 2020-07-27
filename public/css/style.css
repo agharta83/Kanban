@@ -1,0 +1,99 @@
+body {
+  font-family: sans-serif;
+}
+
+/* MENU DE NAVIGATION */
+nav {
+  padding: 1em;
+  background-color: #EFEFEF;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  margin-right: 2em;
+}
+
+nav a {
+  color: #1F1F1F;
+}
+
+/* LISTES */
+.container {
+  display: flex;
+  align-items: start;
+  padding: 1em;
+}
+
+.container .list {
+  width: 10em;
+  border: 1px solid #81adff;
+  padding: .3em;
+  background-color: #81adff;
+  border-radius: 5px;
+  margin-right: .5em;
+}
+
+.list h2 {
+  padding: .4em 0 0 .2em;
+  display: flex;
+  justify-content: space-between;
+}
+.list h2 i { visibility: hidden; }
+.list h2:hover i { visibility: visible; }
+
+.list-cards-card {
+  background-color: #ffe6b3;
+  border: 1px solid #ffe6b3;
+  border-radius: 3px;
+  padding: .3em;
+  font-size: .8em;
+  margin-top: 1em;
+  display: flex;
+  cursor: pointer;
+}
+
+.list-cards-card span { width: 100%; }
+.list-cards-card i { visibility: hidden; align-self: flex-end; }
+.list-cards-card:hover i { visibility: visible; }
+
+/* BOUTON DE CREATION DE LISTE */
+.create {
+  text-align: center;
+}
+
+.create button {
+  background-color: #ffe6b3;
+  border: 1px solid blue;
+  padding: 1em;
+  cursor: pointer;
+}
+
+.create i {
+  margin-right: .4em;
+}
+
+/* FORMULAIRE DE CREATION DE CARTE */
+.create-card {
+  margin-top: .5em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.create-card input, .editList input {
+  background-color: white;
+  border: none;
+  outline: none;
+  padding: .3em;
+}
+
+.create-card button, .editList button {
+  border: 1px solid blue;
+  background-color: #ffe6b3;
+}
+
+.editList {
+  display:none;
+}
